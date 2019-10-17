@@ -761,6 +761,7 @@ cd $LOCATION/teamspeak3-client
 
 # Downloading TS3-Client files.
 
+VERSION="3.2.5"
 if [ -f CHANGELOG ] && [ $(cat CHANGELOG | awk '/Client Release/{ print $4; exit }') == $VERSION ]; then
   greenMessage "TS3 already latest version."
 else
