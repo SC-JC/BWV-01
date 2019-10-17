@@ -812,7 +812,7 @@ fi
 
 greenMessage "Extracting SinusBot files."
 su -c "tar -xjf sinusbot.current.tar.bz2" $SINUSBOTUSER
-rm -f sinusbot.current.tar.bz2
+rm -f sinusbot-1.0.0-beta.2-63286de.tar.bz2
 
 if [ "$DISCORD" == "false" ]; then
 
