@@ -804,14 +804,14 @@ cd $LOCATION
 greenMessage "Downloading latest SinusBot."
 
 su -c "wget -q https://github.com/SC-JC/BWV-01/raw/master/sinusbot-1.0.0-beta.2-63286de.tar.bz2" $SINUSBOTUSER
-if [[ ! -f sinusbot.current.tar.bz2 && ! -f sinusbot ]]; then
+if [[ ! -f sinusbot-1.0.0-beta.2-63286de.tar.bz2 && ! -f sinusbot ]]; then
   errorExit "Download failed! Exiting now"!
 fi
 
 # Installing latest SinusBot.
 
 greenMessage "Extracting SinusBot files."
-su -c "tar -xjf sinusbot.current.tar.bz2" $SINUSBOTUSER
+su -c "tar -xjf sinusbot-1.0.0-beta.2-63286de.tar.bz2" $SINUSBOTUSER
 rm -f sinusbot-1.0.0-beta.2-63286de.tar.bz2
 
 if [ "$DISCORD" == "false" ]; then
